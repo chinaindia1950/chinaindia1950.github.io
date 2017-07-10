@@ -1,0 +1,126 @@
+<div  class="sm-card source-{{source}} {{sourceFilter}}  {{#tags}} {{hash}} {{/tags}} {{tagDate}}" feed-id="{{id}}" tag-date="{{tagDate}}" >
+    <div class="sm-time-point  {{source}}" title=" {{source}} : {{fullDate}}"></div>
+    
+    <div class="sm-card-header">
+        <span class="sm-date sm-large-font">
+            {{#endDate}}
+                <i class="fa fa-calendar-check-o "  aria-hidden="true"></i>
+            {{/endDate}} 
+
+            {{fullDate}}
+        </span>
+        <a class="sm-btn sm-btn-share"> <i class="fa fa-share-alt-square"></i></a>
+        
+        <div class="sm-share-box">
+            <a class="sm-share-facebook sm-large-icon"  href=""  share-url="{{link}}" ><i class="fa fa-facebook-square"></i></a>
+            <a class="sm-share-twitter sm-large-icon"  href=""  share-url="{{link}}" ><i class="fa fa-twitter-square"></i></a>  
+            <a class="sm-share-gplus sm-large-icon"  href=""  share-url="{{link}}" ><i class="fa fa-google-plus-square"></i></a>
+            <a class="sm-share-linkedin sm-large-icon"  href=""  share-url="{{link}}" ><i class="fa fa-linkedin-square"></i></a>
+        </div>
+
+    </div>
+    <div class="sm-card-inner">
+        <div class="sm-card-body"> 
+
+            {{#message}}
+            <div class="sm-message">
+                <p class="sm-message-text">  {{{message}}} </p>
+            </div>
+            {{/message}}
+
+            {{#title}}
+            <h4 class="sm-title sm-large-font">
+                <a class="" {{#originLink}} target="_blank" href="{{originLink}}" {{/originLink}}>{{title}}</a>
+            </h4>
+            {{/title}}
+
+            {{#imgs.length}}
+            <div class="sm-image-box">
+                {{#imgs}}
+                    <div class="sm-image-item">
+                        <a data-title="{{title}}" class="sm-link-pop mfp-{{type}} {{classes}} sm-small-font" href="{{popSrc}}">
+                            <img class="sm-lazy" ini-src="{{src}}" >
+                        </a>
+
+                    </div>
+                {{/imgs}}
+            </div>
+            {{/imgs.length}}
+                
+            {{#embed}}
+            <div class="sm-embed"> {{{ html }}}</div>
+            {{/embed}}
+
+            {{#text}}
+            <p class="sm-text">{{{text}}}</p>
+            {{/text}}
+                
+            {{# optShowCardTags}}
+            <div>
+                {{#tags}}
+                <a class="card-filter" value="{{hash}}">{{name}}</a>
+                {{/tags}}
+            </div>
+            {{/ optShowCardTags}}
+            
+            {{#btnLink}}
+            <a class="sm-btn sm-btn-big sm-show-more" href="{{btnLink}}">Show more</a>
+            {{/btnLink}}
+
+            {{#endDate}}
+            <div class="sm-date-box">
+                <span title="End Date" class="sm-date"> <i class="fa fa-calendar-times-o" aria-hidden="true"></i> {{endDate}} </span>
+                <span title="Duration" class="sm-date"><i class="fa fa-clock-o" aria-hidden="true"></i> Duration:  {{duration}} </span> 
+            </div>
+            {{/endDate}}
+        </div>
+        <div class="sm-card-footer">
+            <div class="sm-users-box">
+                
+                {{# sourceUser.name}}
+                <div class="sm-user">
+                    <a target="_blank"  href="{{sourceUser.link}}">
+                        <span class="sm-avatar" style="background-image:url('{{ sourceUser.avatar }}')"></span>
+                        <span class="sm-user-name">{{sourceUser.name}}</span>
+                    </a>
+                </div>
+                {{/ sourceUser.name}}
+
+                {{#user.name}}
+                <div class="sm-user  {{# sourceUser.name}}sm-user-rt{{/ sourceUser.name}}">
+                    <a target="_blank" href="{{user.link}}">
+                        <span class="sm-avatar" style="background-image:url('{{ user.avatar }}')"></span>
+                        <span class="sm-user-name">{{user.name}}</span>
+                    </a>
+                </div>
+                {{/user.name}}
+            </div>
+
+            {{#shares.length}}
+            <div class="sm-like-box">
+                {{#shares}} 
+                    <span class="sm-like sm-icon">
+                        {{#icon}}
+                            <i class="fa {{icon}}" title="{{title}}" ></i> 
+                            {{count}}
+                        {{/icon}}
+                        
+                        {{^icon}}
+                            <span class="sm-icon-text" >{{title}}
+                                <span class="sm-count">{{count}}</span> 
+                            </span> 
+                        {{/icon}}
+                    
+                    </span> 
+                {{/shares}}
+            </div>
+            {{/shares.length}}
+               
+        </div><!-- close card footer-->
+        
+        {{#cardIcon}}
+        <a target="_blank" href="{{link}}" class="sm-source sm-large-icon"><i class="fa {{cardIcon}}"></i></a>
+        {{/cardIcon}}
+
+      </div><!--close inner -->
+</div>

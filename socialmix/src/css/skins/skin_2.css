@@ -1,0 +1,165 @@
+/***********************************************
+socialmix  1.3.2
+jQuery Socialmix Timeline 
+Copyright (c) Andrea Di Toro 
+http://kodiga.com/jquery-socialmix-timeline/ 
+***********************************************/
+/***********
+FONT & GENERIC
+*********/
+/******
+DROPDPWN 
+*******/
+/******
+SCROLLTOP BTN
+*****/
+/*****
+TIMELINE
+*****/
+/**************
+CARD 
+***********/
+/****************
+BUTTONS AND DROPDOWN 
+****************/
+.sm-container {
+  background-color: #fff;
+}
+.sm-container .sm-filter-container .sm-dropdown-btn {
+  background-color: #9bc1bc;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 4px;
+}
+.sm-container .sm-filter-container .sm-dropdown-content {
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.sm-container .sm-filter-container .sm-dropdown-content a {
+  color: black;
+  border-bottom: 1px solid #efefef;
+}
+.sm-container .sm-filter-container .sm-dropdown-content a:hover {
+  background-color: #eee;
+}
+.sm-container .sm-card-container .sm-scrollToTop {
+  border-radius: 100%;
+  color: #444;
+  background-color: #e8e8e8;
+}
+/*******************
+TIMELINE
+*******************/
+.sm-container .sm-card-container .sm-timeline {
+  background-color: #9bc1bc;
+}
+.sm-container .sm-card-container .sm-timeline:after,
+.sm-container .sm-card-container .sm-timeline:before {
+  border-color: #9bc1bc;
+  background-color: #fff;
+}
+/*******************
+CARD
+*******************/
+.sm-container .sm-card-container .sm-card {
+  min-width: 150px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  /*************************
+    CARD HEADER
+    *************************/
+  /*****************
+    CARD INNER
+    ******************/
+}
+.sm-container .sm-card-container .sm-card .sm-share-facebook,
+.sm-container .sm-card-container .sm-card .fa-facebook-square {
+  color: #22407f;
+}
+.sm-container .sm-card-container .sm-card .sm-share-twitter,
+.sm-container .sm-card-container .sm-card .fa-twitter-square {
+  color: #55acee;
+}
+.sm-container .sm-card-container .sm-card .sm-share-gplus,
+.sm-container .sm-card-container .sm-card .fa-google-plus-square {
+  color: #dd4b39;
+}
+.sm-container .sm-card-container .sm-card .sm-share-linkedin,
+.sm-container .sm-card-container .sm-card .fa-linkedin-square {
+  color: #0077b5;
+}
+.sm-container .sm-card-container .sm-card .sm-btn {
+  color: #fff;
+  border-radius: 3px;
+  background: #dc5949;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.sm-container .sm-card-container .sm-card .sm-btn:hover {
+  background: #cb4838;
+}
+.sm-container .sm-card-container .sm-card .sm-card-header {
+  background-color: #9bc1bc;
+}
+.sm-container .sm-card-container .sm-card .sm-card-header:before {
+  background-color: #9bc1bc;
+}
+.sm-container .sm-card-container .sm-card .sm-card-header .sm-date {
+  color: #fff;
+  font-weight: bold;
+}
+.sm-container .sm-card-container .sm-card .sm-card-header .sm-share-box {
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.sm-container .sm-card-container .sm-card .sm-time-point {
+  border-color: #9bc1bc;
+  background-color: #ed6a5a;
+}
+.sm-container .sm-card-container .sm-card .sm-time-point:before,
+.sm-container .sm-card-container .sm-card .sm-time-point:after {
+  background-color: #fff;
+}
+.sm-container .sm-card-container .sm-card .sm-card-inner {
+  background-color: #fff;
+  border-color: #E6EBE0;
+}
+.sm-container .sm-card-container .sm-card .sm-card-inner .sm-card-body .sm-title a {
+  color: #9bc1bc;
+}
+.sm-container .sm-card-container .sm-card .sm-card-inner .sm-card-footer .sm-user .sm-avatar:before,
+.sm-container .sm-card-container .sm-card .sm-card-inner .sm-card-footer .sm-user .sm-avatar:after {
+  background-color: #E6EBE0;
+}
+.sm-container .sm-card-container .sm-card .sm-card-inner .sm-card-footer .sm-like-box .sm-like {
+  border-color: #E6EBE0;
+  color: #444;
+}
+.sm-one-column-small .sm-card-container .sm-card {
+  box-shadow: none;
+}
+/******************
+  FONTS
+*****************/
+.sm-container {
+  font-family: inherit;
+  font-size: 14px;
+  color: #444;
+}
+.sm-container a {
+  color: #9bc1bc;
+}
+.sm-container .sm-small-font {
+  font-size: 12px;
+}
+.sm-container .sm-large-font {
+  font-size: 16px;
+  line-height: 20px;
+}
+.sm-container .sm-icon:after,
+.sm-container .sm-icon {
+  font-size: 16px;
+}
+.sm-container .sm-large-icon,
+.sm-container .sm-large-icon:after {
+  font-size: 26px;
+}

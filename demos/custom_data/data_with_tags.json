@@ -1,0 +1,116 @@
+[
+    {
+        "id"    : 1,
+        "date"  : "2016-11-1",
+        "title" : "Card with images carousel",
+        "titleLink" : "http://titlelink.com",
+        "imgs"  : [{"src": "./assets/media/img-3.jpg" }, {"src": "./assets/media/img-1.jpg" }, {"src": "./assets/media/img-2.jpg" }],
+        "text"  : "Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Quo no falli viris intellegam, ut fugit veritus placerat per.",
+        "user" : {
+            "name": "UserName",
+            "avatar": "./assets/img/user.png",
+            "link": "./"
+        },
+        "tags": ["Images", "Footer"] 
+    },
+    {
+        "id"    : 2,
+        "date"  : "1953-1-11",
+        "title" : "Art and Culture",
+        "titleLink" : "http://titlelink.com",
+        "text"  : "Chinese Arts and Culture exhbit in Hyderabad",        
+        "tags": ["Exhibition"] 
+    },
+    {
+        "id"    : 3,
+        "date"  : "2016-10-29",
+        "title" : "Multiple Youtube video", 
+        "titleLink" : "https://youtube.com",
+        "text"  : "Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Quo no falli viris intellegam, ut fugit veritus placerat per.",
+        "youtubeVideos":  [{"id": "mIQToVqDMb8"}, {"id": "qrO4YZeyl0I"}],
+        "tags": ["Videos"] 
+    },
+    {
+        "id"    : 4,
+        "date"  : "2016-03-12",
+        "title" : "Card with custom HTML", 
+        "text"  : "Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Quo no falli viris intellegam, ut fugit veritus placerat per.",
+        "embed" : {
+            "html" : "<b>This is bold</b> and <a href='http://codcanyon.net' >this is a link to codcanyon.net<a/><hr/><blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p></blockquote>"
+        },
+        "user" : {
+            "name": "UserName",
+            "avatar": "./assets/img/user.png",
+            "link": "./"
+
+        },
+        "tags": ["Custom HTML", "Footer"] 
+    },
+
+    {
+        "id"    : 5,
+        "date"  : "2016-02-08",
+        "title" : "Card with custom video", 
+        "text"  : "Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Quo no falli viris intellegam, ut fugit veritus placerat per.",
+        "embed" : {
+            "html" : "<video controls>  <source src='./assets/media/video1.mp4' type='video/mp4'> </video> <small>Video credits: <a target='_blank' href='http://videohive.net/item/sea-/9166572?s_rank=29' > SCHMaster </a></small>"
+        },
+        "tags": ["Videos"] 
+
+    },
+    {
+        "id"    : 6,
+        "date"  : "2016-02-09",
+        "title" : "Card with custom HTML (2)", 
+        "text"  : "Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Quo no falli viris intellegam, ut fugit veritus placerat per.",
+        "embed" : {
+            "html" : "<table class='table table-bordered'><tr><td>TR 1</td><td>Awesome timeline </td></tr><tr><td>TR 2 </td><td>Awesome timeline </td></tr></table><h6>List elements<h6/><ul><li>List element 1</li><li>List element 2</li></ul>"
+        },
+        "tags": ["Custom HTML"] 
+    },
+    {
+        "id"    : 7,
+        "date"  : "2016-02-01",
+        "title" : "Card with show more button", 
+        "text"  : "Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Quo no falli viris intellegam, ut fugit veritus placerat per.",
+        "imgs"  : [{"src": "./assets/media/img-4.jpg" }],
+        "btnLink"  : "./assets/media/img-1.jpg",
+        "tags": ["Button"] 
+    },
+    {
+        "id"    : 8,
+        "date"  : "2015-12-31",
+        "title" : "Card with footer icons", 
+        "text"  : "Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Quo no falli viris intellegam, ut fugit veritus placerat per.",
+        "originLink" : "./assets/media/img-2.jpg",
+        "user" : {
+            "name": "UserName",
+            "avatar": "./assets/img/user.png",
+            "link": "./"
+        },
+        "shares" :[
+            {"count": 100, "icon" : "fa-thumbs-up" },
+            {"count": 969, "icon" : "fa-share" },
+            {"count": 146, "icon" : "fa-comment" }
+        ],
+        "tags": ["Footer"] 
+    },
+    {
+        "id"    : 9,
+        "date"  : "2015-12-30",
+        "title" : "Card with footer icon 2", 
+        "text"  : "Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Quo no falli viris intellegam, ut fugit veritus placerat per.",
+        "user" : {
+            "name": "UserName",
+            "avatar": "./assets/img/user.png",
+            "link": "./"
+        },
+        "shares" :[
+            {"count": 100, "title" : "Label1" },
+            {"count": 969, "title" : "Label2" },
+            {"count": 146, "title" : "Label3" }
+        ],
+        "tags": ["Footer"]  
+
+    }
+]

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Custom Feeds | Jquery Socialmix Timeline</title>
+        <link href="./assets/bootstrap/css/bootstrap-skin.min.css" rel="stylesheet">
+        <link href="./assets/demo.css" rel="stylesheet">
+        <link rel="stylesheet"  type="text/css" href="./../socialmix/css/socialmix.min.css" />
+        <link rel="stylesheet" type="text/css" href="./../socialmix/css/skins/skin_1.min.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav ">
+                        <li><a href="index.html"> <strong>Jquery Socialmix Timeline </strong>  </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron">
+                    <h2>Demo JSON data with custom filters</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 timelinebox">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <footer>
+                <div class="row">
+                    <div class="col-md-4"><a href="http://codecanyon.net/user/kodiga"><img class="logo" src="assets/img/logo.png"/></a> </div>
+                    <div class="col-md-4">
+                    jQuery Socialmix Timeline 1.3.2
+        
+                    </div>
+                    <div class="col-md-4">Copyright (c) Andrea Di Toro 2016 </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="./assets/jquery.min.js"></script>
+        <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./../socialmix/js/socialmix.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var options = {
+                    basePath : "./../socialmix/",
+                    momentFormat : " MMMM D  YYYY",
+                    hideGoToFilter: true,
+                    hideSourceFilter: true,
+                    hideTagsFilters: false,
+                    feeds:[
+                        {type : "custom" , id : "./custom_data/data_with_tags.json"},
+                    ]
+                };
+                $(".timelinebox").socialmix(options);
+            });
+        </script>
+    </body>
+</html>

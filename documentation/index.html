@@ -1,0 +1,826 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>socialmix 1.3.2</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <style type="text/css" media="screen">
+    p, table, hr, .box { margin-bottom:25px; }
+    .box p { margin-bottom:10px; }
+    
+    body {font-family: 'Open Sans', sans-serif;}
+    pre{
+        background: #eee;
+        padding: 15px;
+    }
+    .required{
+        color:red;
+    }
+    td{
+        border-bottom: 1px solid #ddd;
+        padding: 15px 5px;
+    }
+    .deleted td {
+        text-decoration: line-through;
+    }
+    </style>
+
+</head>
+
+
+<body>
+	<div class="container">
+	
+		
+		
+		<h2 class="center">jQuery Timeline SocialMix 1.3.2</h2>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 18/03/2016<br>
+					By: Andrea Di Toro<br>
+					Email: <a href="mailto:aditoro@gmail.com">aditoro@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing jQuery Timeline SocialMix. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/kodiga">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+            <li><a href="#folders">Folder structure</a></li>
+			<li><a href="#installation">Installation</a></li>
+            <li><a href="#feeds">Feeds </a></li>
+            <li><a href="#options-js">Options (JS)</a></li>
+            <li><a href="#events-js">Events (JS)</a></li>
+            <li><a href="#methods-js">Methods (JS)</a></li>
+			<li><a href="#options-php">Options (PHP)</a></li>
+            <li><a href="#custom-data">Working whit custom data </a></li>
+			<li><a href="#skins"> Skin </a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		<hr>
+        <h3 id="folders"><strong>A) Folder structure</strong> - <a href="#toc">top</a></h3>
+        The main plugin folder contains three subfolders:
+        <ol>
+            <li> <strong>Demos: </strong> very useful for getting started</li>
+            <li> <strong>Documentation</strong>   </li>
+            <li> <strong>Socialmix: </strong> this folder contains all plugin files
+                <ul>
+                    <li>assets: external library </li>
+                    <li>css: compressed CSS</li>
+                    <li>js:  minified javascript   </li>
+                    <li>html: templates </li>
+                    <li>src: Socialmix and assets source code (uncompressed JS, CSS, LESS)</li>
+                    <li>php: back-end</li>
+                </ul>
+            </li>
+        </ol>
+        <hr>
+
+        <h3 id="installation"><strong>A) Installation</strong> - <a href="#toc">top</a></h3>
+        <p>
+        The installation process is composed of two main steps: front-end installation and back-end installation.
+        </p>
+        <h4><strong>Front-end installation </strong></h4>
+        <strong>1) Load scripts and stylesheets</strong><br/> Make sure the socialmix.min.js is included after jQuery.
+<pre>
+&lt;!--  Socialmix css  --&gt
+&lt;link rel="stylesheet"  type="text/css" href="/STATIC-FOLDER/socialmix/css/socialmix.min.css" /&gt;
+&lt;!--  Socialmix skin css --&gt
+&lt;link rel="stylesheet" type="text/css" href="/STATIC-FOLDER/socialmix/css/skins/skin_1.min.css" /&gt;
+
+&lt;!--  jQuery 1.7+  --&gt
+&lt;script type="text/javascript" src="./assets/jquery.min.js" /&lt;script&gt;
+&lt;!-- Include socialmix.min.js  --&gt
+&lt;script src="/STATIC-FOLDER/socialmix/js/socialmix.min.js"&gt; &lt;/script&gt;
+</pre>
+
+        <strong>2) Set up the html</strong><br/>
+       All you need is put a socialmix container inside your html document.
+<pre>
+&lt;body &gt;
+    ...
+        &lt;div class="my-timeline-container" &gt;
+        &lt;/div&gt;
+    ...
+&lt;/body &gt;
+</pre>
+        <strong>3) Call the plugin</strong><br/> Call the socialmix initializer function.
+        <br/>
+        Please note:
+        <br/>
+        - "basePath" option is required. Socialmix uses this path to load asynchronously all assets.
+        <br/>
+        - "proxy" option is required only if you are using Socialmix back-end. 
+
+<pre>
+&lt;script type="text/javascript"&gt;
+$(document).ready(function(){
+    var options = {
+        basePath : "/STATIC-FOLDER/socialmix/",
+        proxy : "./../socialmix/php/get_data.php",//optional:path to socialmix Back-end
+        feeds:[
+            .....
+        ]
+     
+    };
+    $(".my-timeline-container").socialmix(options);
+});
+&lt;/script&gt;
+    
+</pre>
+        <p>See <a href="#options-js" >option</a> section for all available options and <a href="#feeds">feeds</a> section to configure your feeds</p>
+
+        <h4><strong>Back-end installation (php) </strong></h4>
+        <p>The back-end is required only if you want to use social media feeds. If you work whit custom data you don't need this installation step and you can jump to the next section.</p>
+        <p>
+        The back-end is a php script that requires a php 5.3 version.
+        It has only one dependency: phpfastcache that is included in "socialmix/php/vendor" folder. 
+        </p>
+        <p>
+            To run the back-end script, follow the instructions: <br/>
+        1) Move contents of socialmix/php/ in your php server directory.  <br/>
+        2) Put your API KEYS in settings.php.
+
+<pre>
+#facebook
+$facebook_app_id      = "YOUR-FACEBOOK-APP-ID  ";
+$facebook_app_secret  = "YOUR-FACEBOOK-APP-SECRET";
+
+#google plus
+$gplus_api_key   = "YOUR-GPLUS-API-KEY";
+
+#youtube plus
+$youtube_api_key   = "YOUR-YOUTUBE-API-KEY";
+
+#twitter
+$twitter_consumer_key = "YOUR-TWITTER-CONSUMER-KEY";
+$twitter_secret_key   = "YOUR-TWITTER-SECRET-KEY";
+
+$viemo_access_token = "YOUR-VIMEO-ACCESS-TOKEN";
+
+
+</pre>
+        3) Configure phpfastcache settings in settings.php. If you want to use filesystem cache (default option), pleas make sure the "path" option is a writable folder. For all settings see <a href="http://www.phpfastcache.com/"> official phpfastcache documentation </a>.
+<pre>
+    
+#cache
+$use_cache = true;
+$cache_time_seconds = 60 * 60 * 3;
+
+$config_cache = array(
+    "storage"   => "files",
+    "path"      =>  "",  // path to cache folder, leave it blank for auto detect
+    "htaccess"      => true, // create .htaccess to protect cache folder
+);     
+?>
+</pre>
+        4) Now your back-end is available with a url similar to  "http://your-domain/your-backend-folder/get_data.php". Use this url as value of javascript "proxy" option.
+        </p>
+        
+        <p>See <a href="#options-php" >php option</a> section for all available options</p>
+		<hr>
+        <h3 id="feeds"><strong>Feeds</strong> - <a href="#toc">top</a></h3>
+        <p>
+        Socialmix works with different feed types. In a single timeline you can mix different types of feeds.  <br/>
+        The feed system is extremly flexible and allow you to load  specific resources and use different "id" types. 
+
+        In the following you can find all allowed feed types.
+        </p>
+<pre>
+&lt;script type="text/javascript"&gt;
+$(document).ready(function(){
+    var options = {
+        basePath : "/STATIC-FOLDER/socialmix/",
+        proxy : "./../socialmix/php/get_data.php",
+        feeds:[
+            //get Facebook page posts
+            {type : "facebook" , id : "Page Name or Page ID"},
+            
+            //get Facebook page events
+            {type : "facebook" , id : "Page Name or Page ID" , resources: "events"}, 
+            
+            //get Facebook page posts + events
+            {type : "facebook" , id : "Page Name or Page ID" , resources: "all"}, 
+            
+            //get Twitter timeline
+            {type : "twitter" , id : "twitter-username" },
+            
+            //get Twitter searh result
+            {type : "twitter" , id : "Search keyword, you can use #,@", target:"search" },
+            
+            //Get youtube uploaded video by channelID
+            {type : "youtube" , id : "channel-id"},
+            
+            //Get youtube uploaded video by username
+            {type : "youtube" , id : "username", target:"username"},
+
+            //Get vimeo uploaded video by username
+            {type : "vimeo" , id : "username"}
+
+            //Get Google Plus page posts
+            {type : "gplus" , id : "+pagename" },
+
+        ]
+     
+    };
+    $(".my-timeline-container").socialmix(options);
+});
+&lt;/script&gt;
+</pre>
+        <p>In the following table, we explain in details all allowed feed options</p>
+       
+        <table>
+            <col width="25%">
+            <col width="20%">
+            <col width="15%">
+            <col width="20%">
+            <col width="20%">
+        
+            <thead>
+                <tr>
+
+                    <th></th>
+                    <th>type </th>
+                    <th>id</th>
+                    <th>target</th>
+                    <th>resources</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Facebook page posts and events</td>
+                    <td>"facebook"</td>
+                    <td>Page id/name</td>
+                    <td> - </td>
+                    <td> "posts", "events", "all". Default: "posts" </td>
+                </tr>
+                 <tr>
+                    <td>Twitter User Timeline</td>
+                    <td>"twitter"</td>
+                    <td>Username </td>
+                    <td>"username" (Default)</td>
+                    <td> "all" (Default) </td>
+                </tr>
+                <tr>
+                    <td>Twitter Search</td>
+                    <td>"twitter"</td>
+                    <td>Search keyword </td>
+                    <td>"search"</td>
+                    <td> "all" (Default) </td>
+                </tr>
+                 <tr>
+                    <td>Uploaded video by channel ID </td>
+                    
+                    <td>"youtube"</td>
+                    <td>Channel id </td>
+                    <td>"channelid" (Default)</td>
+                    <td>"all" (Default)</td>
+                </tr>
+                <tr>
+                    <td>Uploaded video by Username </td>
+                    <td>"youtube"</td>
+                    <td>Username </td>
+                    <td>"username" </td>
+                    <td>"all" (Default)</td>
+                </tr>
+
+                 <tr>
+                    <td>Google plus page posts </td>
+                    <td>"gplus"</td>
+                    <td>Page id/name</td>
+                    <td> - </td>
+                    <td> "all" (Default) </td>
+                </tr>
+                 <tr>
+                    <td>Vimeo Uploaded video</td>
+                    <td>"vimeo"</td>
+                    <td>Vimeo Username</td>
+                    <td> - </td>
+                    <td> "all" (Default) </td>
+                </tr>
+
+                 <tr>
+                    <td>JSON custom data</td>
+                    <td>"custom"</td>
+                    <td>JSON Url</td>
+                    <td> - </td>
+                    <td> "all" (Default) </td>
+
+                </tr>
+                <tr>
+                    <td>JS custom data</td>
+                    <td>"custom_object"</td>
+                    <td>Variable Name</td>
+                    <td> - </td>
+                    <td> "all" (Default) </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+		<h3 id="options-js"><strong>C) Options</strong> - <a href="#toc">top</a></h3>
+		<table>
+            <col width="10%">
+            <col width="20%">
+            <col width="10%">
+            <col width="60%">
+        
+			<thead>
+				<tr>
+					<th>Name</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <span class="required">*</span> <strong>basePath</strong></td>
+                    <td>String Url</td>
+                    <td> "" </td>
+                    <td>Url to socialmix main folder. Example: "static-folder/assets/socialmix/" </td>
+
+                </tr>
+				<tr>
+					<td><span class="required">*</span> <strong>feeds</strong></td>
+					<td> Object list </td>
+					<td> [  ] </td>
+					<td>List of feed objects. Every feed object has the following properties:
+                    <ul>
+                        <li><span class="required">*</span> <strong>type: </strong> "facebook" | "twitter" | "gplus" | "custom" </li>
+                        <li><span class="required">*</span> <strong>id: </strong> Social media username</li>
+                        <li><strong>tags: </strong> list of string</li>
+                    </ul>
+                    Example:<br/>
+                    [
+                    {type : "twitter" , id: "your-twitter-username", tags: ["tag1" , "tag2"] },<br/>
+                    {type : "facebook" , id: "your-facebook-pagename", tags: ["tag3"] }
+                    ]
+                    <br/>
+                    </td>
+				</tr>
+                <tr>
+                    <td> <span class="required">*</span> <strong>proxy</strong></td>
+                    <td>String Url</td>
+                    <td> "" </td>
+                    <td>Back-end url. Required only if you use social media feed. Example : "/services/socialmix/get_data.php" </td>
+
+                </tr>
+                <tr>
+                    <td><strong>facebookAppId</strong></td>
+                    <td> String </td>
+                    <td> "" </td>
+                    <td>The facebook app id is required for sharing and rendering videos on facebook</td>
+
+                </tr>
+                <tr>
+                    <td><strong>carouselHeigth</strong></td>
+                    <td> Number px</td>
+                    <td> 300 </td>
+                    <td> Height of slick carousel</td>
+
+                </tr>
+                <tr class="deleted">
+                    <td><strong>showFilters</strong></td>
+                    <td> Boolean </td>
+                    <td> True</td>
+                    <td>Show or hide filter buttons. Tag filter and go to selector </td>
+
+                </tr>
+                <tr>
+                    <td><strong>hideAllFilters</strong></td>
+                    <td> Boolean </td>
+                    <td> false</td>
+                    <td>Show or hide filter bar. Hide all filters </td>
+
+                </tr>
+                <tr>
+                    <td><strong>hideTagsFilters</strong></td>
+                    <td> Boolean </td>
+                    <td> False</td>
+                    <td>Show or hide tag filter selector.</td>
+
+                </tr>
+                <tr>
+                    <td><strong>hideDateFilters</strong></td>
+                    <td> Boolean </td>
+                    <td> False</td>
+                    <td>Show or hide date filter selector.</td>
+
+                </tr>
+                <tr>
+                    <td><strong>hideGoToFilter</strong></td>
+                    <td> Boolean </td>
+                    <td> False</td>
+                    <td>Show or hide Go To Date button.</td>
+
+                </tr>
+                 <tr>
+                    <td><strong>hideSourceFilter</strong></td>
+                    <td> Boolean </td>
+                    <td> False</td>
+                    <td>Show or hide source filter selector.</td>
+
+                </tr>
+                
+                 <tr>
+                    <td><strong>sortCustomTag</strong></td>
+                    <td> Boolean </td>
+                    <td> True</td>
+                    <td>Sort cutom tag inside the tag Selector </td>
+
+                </tr>
+                 <tr>
+                    <td><strong>sortCustomTagMode</strong></td>
+                    <td> String </td>
+                    <td> "asc"</td>
+                    <td>Cutom tag sort mode. "asc" = Ascending Mode, "desc" Descending Mode</td>
+
+                </tr>
+                <tr>
+                    <td><strong>showCardCustomTags</strong></td>
+                    <td> Boolean </td>
+                    <td> False</td>
+                    <td>Show custom tags filter link inside cards  </td>
+
+                </tr>
+
+
+                <tr>
+                    <td><strong>oneColumnTimeline</strong></td>
+                    <td> Boolean </td>
+                    <td> false </td>
+                    <td>Hide the timeline in one column mode</td>
+
+                </tr>
+                <tr>
+                    <td><strong>oneColumnHeight</strong></td>
+                    <td> Number px </td>
+                    <td> "" </td>
+                    <td>The height of one column widget. Useful when you use socialmix like a sidebar widget </td>
+
+                </tr>
+                <tr>
+                    <td><strong>fixOneColumnMode</strong></td>
+                    <td> Boolean </td>
+                    <td> false </td>
+                    <td>Socialmix works only in one column mode. Useful if you want to use socialmix in one column mode in a full page</td>
+
+                </tr>
+                <tr>
+                    <td><strong>maxCardNumber</strong></td>
+                    <td> Number </td>
+                    <td> "" </td>
+                    <td>Max number of entries displayed in your widget</td>
+
+                </tr>
+                <tr>
+                    <td><strong>momentLocale</strong></td>
+                    <td> String </td>
+                    <td> "en" </td>
+                    <td>Set language for date format. Example: "es|en" </td>
+
+                </tr>
+                <tr>
+                    <td><strong>momentFormat</strong></td>
+                    <td> String </td>
+                    <td> "MMMM D YYYY, HH:mm" </td>
+                    <td>Date format . See <a href="http://momentjs.com/docs/#/displaying/format/" target="_blank">moment js date format option </a></td>
+
+                </tr>
+                <tr>
+                    <td><strong>momentSmallFormat</strong></td>
+                    <td> String </td>
+                    <td> "MMMM D YYYY" </td>
+                    <td>Small date format.  See <a href="http://momentjs.com/docs/#/displaying/format/" target="_blank">moment js date format option </a></td>
+
+                </tr>
+                
+                <tr>
+                    <td><strong>displayMode</strong></td>
+                    <td> 'timeline' || 'grid' </td>
+                    <td> 'timeline' </td>
+                    <td>Set timeline layout por grid layout</td>
+
+                </tr>
+                 <tr>
+                    <td><strong>sortCards</strong></td>
+                    <td> 'desc' || 'asc' </td>
+                    <td> 'desc' </td>
+                    <td>Sort card in ascending or descending mode</td>
+
+                </tr>
+                <tr>
+                    <td><strong>gridCardMinWidth</strong></td>
+                    <td> Number (px) </td>
+                    <td> 250</td>
+                    <td>Cards min width in gid mode</td>
+
+                </tr>
+                <tr>
+                    <td><strong>gridCardMargin</strong></td>
+                    <td> Number (px) </td>
+                    <td> 40</td>
+                    <td>Margin between card in grid mode</td>
+
+                </tr>
+                <tr>
+                    <td><strong>timelineCardMargin</strong></td>
+                    <td> Number (px) </td>
+                    <td> 40</td>
+                    <td>Margin between cards in timeline mode</td>
+
+                </tr>
+                <tr>
+                    <td><strong>timelineMinWidthTwoCol</strong></td>
+                    <td> Number (px) </td>
+                    <td> 650</td>
+                    <td>Min width for two column mode. If your container width is smaller than this value, the timeline automatically switch to one column mode </td>
+
+                </tr>
+
+                <tr>
+                    <td><strong>animation</strong></td>
+                    <td> string</td>
+                    <td> fadeIn</td>
+                    <td>Card animation.fadeIn ||slideInUp || slideInDown || fadeIn || fadeInUp || fadeInDown  </td>
+
+                </tr>
+
+
+                
+                <tr>
+                    <td> <strong>translate</strong></td>
+                    <td> Object  </td>
+                    <td> {} </td>
+                    <td>Default value
+                        <pre>
+translate:    {
+        filterBy : "Filter By",
+        filterByTag :"Filter by tag",
+        allTags : "All Tags",
+        goToDate : "Go to date",
+        filterByDate: "Date",
+        allDates : "All Dates",
+        twitter: "Twitter",
+        facebook: "Facebook",
+        gplus: "Google +",
+        allSources : "All Sources",
+        filterBySource : "Sources"
+    }
+                        </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <strong>icons</strong></td>
+                    <td> Object  </td>
+                    <td> {} </td>
+                    <td>Default value
+                        <pre>
+icons: {
+    twitter: "fa fa-twitter-square",
+    facebook: "fa fa-facebook-square",
+    gplus: "fa fa-google-plus-square",
+    youtube :"fa fa-youtube-square",
+    vimeo:"fa fa-vimeo-square",
+    event:"fa fa-calendar-check-o"
+
+}
+                        </pre>
+                    </td>
+                </tr>
+
+                
+            </tbody>
+        </table>
+        <span class="required">* This field is required</span>
+        <hr>
+
+
+		<h3 id="events-js"><strong>C) Events</strong> - <a href="#toc">top</a></h3>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><strong>sm-FeedsLoaded</strong></td>
+					<td>Trigger when all feeds are loaded</td>
+
+				</tr>
+				<tr>
+					<td><strong>sm-MediaLoaded</strong></td>
+					<td>Trigger when all media are loaded</td>
+				</tr>
+			</tbody>
+		</table>
+<pre>
+$(document).on( "smFeedsLoaded", function(  ) {
+    console.log( "smFeedsLoaded" );
+});
+$(document).on( "smMediaLoaded", function(  ) {
+    console.log( "smMediaLoaded" ); 
+});    
+</pre>
+
+
+		<hr>
+
+
+		<h3 id="methods-js"><strong>C) Methods</strong> - <a href="#toc">top</a></h3>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><strong>fitCatds</strong></td>
+					<td>Fit the cards inside the container</td>
+				</tr>
+			</tbody>
+		</table>
+<pre>
+var socialmix = $(".my-timeline-container").data("socialmix");
+socialmix.fitCards();
+</pre>
+        <hr>
+        <h3 id="options-php"><strong>F) Php options</strong> - <a href="#toc">top</a></h3>
+        <p>Php options are located in settings.php file.</p>
+        <table>
+            <col width="20%">
+            <col width="10%">
+            <col width="70%">
+        
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <strong>$facebook_app_id</strong></td>
+                    <td>String</td>
+                    <td>Facebook App ID</td>
+
+                </tr>
+                <tr>
+                    <td> <strong>$facebook_app_secret </strong></td>
+                    <td>String</td>
+                    <td>Facebook App Secret </td>
+
+                </tr>
+                <tr>
+                    <td> <strong>$gplus_api_key</strong></td>
+                    <td>String</td>
+                    <td>Google Plus Api Key </td>
+
+                </tr>
+                <tr>
+                    <td> <strong>$twitter_consumer_key </strong></td>
+                    <td>String</td>
+                    <td>Twitter Consumer Key</td>
+
+                </tr>
+                <tr>
+                    <td> <strong>$twitter_secret_key</strong></td>
+                    <td>String</td>
+                    <td>Twitter Secret Key </td>
+
+                </tr>
+                <tr>
+                    <td><strong>$csrf_protection </strong></td>
+                    <td>Boolean</td>
+                    <td>Use csrf protecion  </td>
+
+                </tr>
+                <tr>
+                    <td><strong>$allowed_host </strong></td>
+                    <td>String</td>
+                    <td>Allowed host if $csrf_protection is true. All requests from hosts different to $allowed_host will be denied  </td>
+
+                </tr>
+
+                <tr>
+                    <td> <strong>$use_cache</strong></td>
+                    <td>Boolean </td>
+                    <td>Activates phpfastcache</td>
+
+                </tr>
+
+                <tr>
+                    <td> <strong>$cache_time_seconds</strong></td>
+                    <td>Integer (seconds) </td>
+                    <td>Duration cache time </td>
+
+                </tr>
+                <tr>
+                    <td> <strong>$config_cache</strong></td>
+                    <td>array</td>
+                    <td> Cache parameters configuration. Default configurations use file system cache and autodetect cache folder. To change default cache settings see <a href="http://www.phpfastcache.com/">official phpfastcache documentation</a>.  </td>
+
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <hr>
+        <h3 id="custom-data"><strong>G) Custom data</strong> - <a href="#toc">top</a></h3>
+        You can use custom data to populate the timeline. You can create your own web service or deliver your data in json format.
+        For json data format see demo files.
+
+Set the front-end to work with your custom data
+
+<pre>
+&lt;script type="text/javascript"&gt;
+$(document).ready(function(){
+    var options = {
+        basePath : "....",
+        feeds:[
+            {type : "custom" , id: "/your-data-source/data.json"}
+        ]
+     
+    };
+    $(".my-timeline-container").socialmix(options);
+});
+&lt;/script&gt;
+</pre>
+If you want to use Javascript Object instaed of JSON datas you can set "id" with variable name. For json data format see demo files.
+<pre>
+&lt;script type="text/javascript"&gt;
+$(document).ready(function(){
+    var js_data = [{ ... }, { ... } ];//object list
+    var options = {
+        basePath : "....",
+        feeds:[
+            {type : "custom" , id: "js_data"}
+        ]
+     
+    };
+    $(".my-timeline-container").socialmix(options);
+});
+&lt;/script&gt;
+</pre>
+        <hr>
+        <h3 id="skins"><strong>H) Skin</strong> - <a href="#toc">top</a></h3>
+        <p>Socialmix has three different skins. You can find it in "socialmix/css/skins/". To use a skin, load skin_x.css in your html document.
+        </p>
+        <p>
+            If you want to create your own skin, you can modify an existing skin or create a new one.
+        </p>
+
+        <hr>
+        <h3 id="credits"><strong>H) Credits</strong> - <a href="#toc">top</a></h3>
+        All external libraries used in this plugin are distributed with MIT licence.
+        Special thanks to developer of all this libraries.
+
+        <ul>
+            <li><a href="http://www.phpfastcache.com/">phpfastcache</a></li>
+            <li><a href="http://momentjs.com/">Moment.js</a></li>
+            <li><a href="https://github.com/janl/mustache.js">Mustache</a></li>
+            <li><a href="http://kenwheeler.github.io/slick/">Slick </a></li>
+            <li><a href="https://github.com/alexcorvi/anchorme.js/">Anchorme.js</a></li>
+            <li><a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
+            <li><a href="https://jquery.com/">Jquery</a></li>
+            <li><a href="http://lesscss.org/">Less</a></li>
+            <li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a></li>
+
+
+
+        </ul>
+		<hr/>
+
+		
+		
+		
+		<p>Once again, thank you so much for purchasing jQuery Socialmix Timeline. As I said at the beginning, I'd be glad to help you if you have any questions relating to this plugin. No guarantees, but I'll do my best to assist. If you have a more general question relating to the plugin on Codecanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Andrea Di Toro</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

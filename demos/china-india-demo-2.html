@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>China-India Relations in the 1950s</title>
+        <link href="./assets/bootstrap/css/bootstrap-skin.min.css" rel="stylesheet">
+        <link href="./assets/demo.css" rel="stylesheet">
+        <link rel="stylesheet"  type="text/css" href="./../socialmix/css/socialmix.min.css" />
+        <link rel="stylesheet" type="text/css" href="./../socialmix/css/skins/skin_2.min.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav ">
+                        <li><a href="http://www.fas.harvard.edu/~histecon/"> <strong>Center For History and Economics | Harvard University</strong>  </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron">
+                    <h2>1950s China-India Chronology</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 timelinebox">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <footer>
+                <div class="row">
+                    <div class="col-md-4"> Center For History and Economics | Harvard University </div>
+                    <div class="col-md-4"> </div> 
+                    <div class="col-md-4"> JQuery Timeline Package Copyright (c) Andrea Di Toro</div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="./assets/jquery.min.js"></script>
+        <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./../socialmix/js/socialmix.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var options = {
+                    basePath : "./../socialmix/",
+                    momentFormat : " MMMM YYYY",
+                    hideGoToFilter: true,
+                    hideSourceFilter: true,
+                    hideTagsFilters: false,
+                    sortCards: 'asc',
+                    feeds:[
+                        {type : "custom" , id : "./custom_data/china-india-data.json"},
+                    ]
+                };
+                $(".timelinebox").socialmix(options);
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,274 @@
+/***********************************************
+socialmix  1.3.2
+jQuery Socialmix Timeline 
+Copyright (c) Andrea Di Toro 
+http://kodiga.com/jquery-socialmix-timeline/ 
+***********************************************/
+
+/******************
+GENERAL CONTAINER
+******************/
+.sm-container{
+    padding: 10px  0;
+}
+
+/********************
+  FILTER CONTAINER
+*********************/
+.sm-container .sm-filter-container{
+    padding-bottom: 10px;
+    .sm-dropdown{
+        margin-bottom: 10px;
+        margin-right: 10px;
+    } 
+}
+
+.sm-container  .sm-filter-container-middle-boxed{
+    overflow: hidden;
+    .sm-dropdown{
+        display: inline-block;
+        width: 48%;
+        margin-right: 0;
+        &:nth-child(1) ,&:nth-child(3){
+            float: left;
+
+        }
+        &:nth-child(2) ,&:nth-child(4){
+            float: right;
+        }  
+    } 
+
+    .sm-dropdown-btn{
+        width: 100%;
+        &>i{
+            float: right;
+            margin-top: 5px;
+        }
+    }
+}
+.sm-container  .sm-filter-container-boxed{
+    .sm-dropdown{
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    } 
+    .sm-dropdown-btn{
+        width: 100%;
+        &>i{
+            float: right;
+            margin-top: 5px;
+        }
+    }
+}
+
+
+/******************
+CARDS CONTAINER
+******************/
+.sm-container .sm-card-container{
+    position: relative;
+    height: auto;
+    min-height: 100px;
+  
+    //TIMELINE
+    .sm-timeline{
+        background-color: #ccc;
+        width: 4px;
+        margin-left: -2px;
+      
+        &:after , &:before{
+            padding: 7px;
+            border-radius : 100%;
+            content: "";
+            display: block;
+            position: absolute;
+            left: -10px;
+            border : 5px solid #ccc;
+            background-color: #fff;
+        }
+        &:after{
+            bottom:-1px;
+            top: auto;
+        }
+        &:before{
+            bottom :auto;
+        }
+    }
+}
+
+/******************
+ON ONE COLUMN MODE
+******************/
+.sm-one-column {
+
+    .sm-card-container{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    
+        .sm-timeline{
+            animation: fadein 2s;
+            display: block;
+            float: left;
+            position: absolute;
+            height: auto;
+            float: left;
+            top: 0;
+            bottom: 0;
+
+        }
+        .sm-card{
+            width : auto;
+            position : relative;
+            display : block;
+            margin-bottom : 30px;
+            margin-left: 30px;
+        }
+    
+        .sm-right-side{
+            .sm-time-point{
+                left: -42px;
+            }
+
+        }
+
+    }
+    
+}
+
+
+
+/******************
+ONE COLUMN  WHITOUT TIMELINE MODE
+******************/
+.sm-one-column-noline {
+    .sm-one-column;
+    .sm-card-container{
+        padding-left: 0;
+        .sm-timeline{
+            display: none;
+        }
+        .sm-card{
+            margin-left: 0;
+            .sm-time-point{
+                display: none;
+            }
+            .sm-card-header:before{
+                display: none;
+            }
+        }
+    }
+}
+
+
+/********************
+ONE COLUMN SMALL SIZE  MODE 
+*********************/
+.sm-one-column-small {
+    .sm-one-column-noline;
+    padding: 0; 
+    
+    .sm-card-container{
+        padding: 0;
+        .sm-card{
+            margin-bottom: 5px;
+            font-size: 12px;
+            .sm-large-font , .sm-icon{
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: bold;
+            }
+            .sm-large-icon{
+                font-size:20px;
+            }
+            .sm-card-header{
+                padding: 7px 5px;
+            }
+            .sm-btn{
+                padding: 0 4px;
+                position: absolute;
+                right: 6px;
+            }
+            .sm-card-inner {
+                padding: 10px;
+                padding-bottom:0;
+                border-width: 2px;
+                .sm-card-body .sm-message{
+                    padding-left: 0;
+                    border:0; 
+                }
+                .sm-title,.sm-message,.sm-image-box,.sm-embed,.sm-text{
+                    margin-bottom: 3px;
+                }
+                .sm-card-footer{
+                    margin-top: 15px;
+                    .sm-users-box{
+                        top:-15px;
+                    }
+                    .sm-user .sm-avatar{
+                        padding: 13px;
+                    }
+                }
+            }   
+        }
+    }
+}
+
+/******************
+ TWO COLUMN MODE
+******************/
+.sm-two-column{
+
+    .sm-card-container {
+    
+        .sm-timeline{
+            display: block;
+            animation: fadein 1s;
+            position: absolute;
+            left: 50%;
+            top: 4px;
+            bottom: 10px;
+        }
+        .sm-card{
+            width: auto;
+            position : absolute;
+            display : block;
+            margin-bottom : 0;
+        }
+        .sm-left-side{
+            left: 0;
+            right: 50%;
+            margin-right: 40px;
+            .sm-time-point{
+              right: -52px;
+            }
+        }
+        .sm-right-side{
+            right: 0;
+            left: 50%;
+            margin-left: 40px;
+            .sm-time-point{
+                left: -52px;
+            }
+        }
+    }
+} 
+
+
+.sm-grid-column{
+    background-color: red;
+    
+    .sm-card-container {
+        margin-top: 10px;
+        .sm-timeline{
+            display: none;
+
+        }
+        .sm-card{
+            position : absolute;
+            display : block;
+            margin-bottom : 0;
+        }
+        
+    }
+} 

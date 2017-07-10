@@ -1,0 +1,50 @@
+<div class="sm-container">
+	
+	<div class="sm-filter-container">
+	    <!--<button class="sm-show-filter">Show FIlters</button>-->
+    	<div class="sm-filter-tag sm-dropdown">
+    		  <button class="sm-dropdown-btn">{{filterByTag}} : <b><span class="sm-dropdown-selected">{{allTags}}</span></b>  <i class="fa fa-caret-down"></i></button>
+    		  <div class="sm-dropdown-content">
+    		  	<a value="all">{{allTags}}</a>
+    		  </div>
+    	</div>
+        <div class="sm-filter-source sm-dropdown ">
+            <button class="sm-dropdown-btn">{{filterBySource}} : <b><span class="sm-dropdown-selected">{{allSources}}</span></b>  <i class="fa fa-caret-down"></i></button>
+            <div class="sm-dropdown-content">
+            <a value="all">{{allSources}}</a>
+            </div>
+        </div>
+        
+        <div class="sm-goto sm-dropdown ">
+              <button class="sm-dropdown-btn">{{goToDate}}<i class="fa fa-caret-down"></i></button>
+              <div class="sm-dropdown-content">
+               
+              </div>
+        </div>
+        
+        <div class="sm-filter-date sm-dropdown ">
+            <button class="sm-dropdown-btn">{{filterByDate}} : <b><span class="sm-dropdown-selected">{{allDates}}</span></b>  <i class="fa fa-caret-down"></i></button>
+            <div class="sm-dropdown-content">
+            <a value="all">{{allDates}}</a>
+               
+            </div>
+        </div>
+
+	</div>
+
+
+	<div class="sm-card-container">
+	  	<a href="#" class="sm-scrollToTop sm-large-icon" ><i class="fa fa-arrow-up"></i></a>
+		<div class="sm-timeline"></div>
+		<div class="sm-loader">
+			<div class="sm-spinner">
+			  <div class="sm-rect1"></div>
+			  <div class="sm-rect2"></div>
+			  <div class="sm-rect3"></div>
+			  <div class="sm-rect4"></div>
+			  <div class="sm-rect5"></div>
+			</div>
+
+		</div>
+	</div>
+</div>
