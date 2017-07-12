@@ -6,8 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>China-India Relations in the 1950s</title>
-        <link href="./demos/assets/bootstrap/css/bootstrap-skin.min.css" rel="stylesheet">
-        <link href="./demos/assets/demo.css" rel="stylesheet">
+        <link href="./../demos/assets/bootstrap/css/bootstrap-skin.min.css" rel="stylesheet">
+        <link href="./../demos/assets/demo.css" rel="stylesheet">
         <link rel="stylesheet"  type="text/css" href="./../socialmix/css/socialmix.min.css" />
         <link rel="stylesheet" type="text/css" href="./../socialmix/css/skins/skin_1.min.css" />
     </head>
@@ -50,6 +50,37 @@
             </div>
         </div>
 
+        <div class="container wb course-summary">
+            <div class="row centered">
+                <div class="col-lg-8 col-lg-offset-2 justified">
+                    <h1> About Us</h1>
+                    <p>This database is supported and hosted by the Joint Center for History and Economics at Harvard University, Cambridge, MA. </p>                   
+
+                </div>
+            </div>
+        </div>
+
+        <div id="dg">
+            <div class="container">
+                <div class="row centered">
+
+                    <div class="col-lg-6">
+                    <h4>Arunabh Ghosh</h4>
+                    <img class="img-circle" src="https://static.projects.iq.harvard.edu/files/styles/profile_full/public/history/files/arunabh_iii_1_of_1_smaller.jpg?m=1496939749&itok=om2qXqzP" width="110" height="110" alt="Arunabh Ghosh">
+                    <p class="justified">Arunabh Ghosh is Assistant Professor in the History Department at Harvard University, where he teaches and works on the history of modern China. He is currently completing a book on statistics and statecraft during the first decade of the People’s Republic of China. For more about him, please visit his <a href="https://history.fas.harvard.edu/people/arunabh-ghosh">personal site.</a></p>
+
+                    </div>
+
+                    <div class="col-lg-6">
+                    <h4>Ye Seul Byeon</h4>
+                    <img class="img-circle" src="https://i2.wp.com/www.yeseulbyeon.com/wp-content/uploads/2016/12/Ye-Seul-Byeon-photo-1-1.jpg?resize=297%2C300" width="110" height="110" alt="Ye Seul Byeon">
+                    <p class="justified"> Ye Seul Byeon received a B.A. in history from Yale College in 2016, with a focus on Latin America. She has previously done research on the Cold War connections between Asia and Latin America. Currently, she is working as a research assistant at the Joint Center for History and Economics at Harvard University. Samples of her work at the Center can be found <a href="http://www.fas.harvard.edu/~histecon/visualizing/atlantic-history/">here</a>, <a href="http://www.fas.harvard.edu/~histecon/visualizing/privileges/index.html">here</a> and <a href="http://www.fas.harvard.edu/~histecon/visualizing/sduk/">here</a>. Check out her <a href="http://www.yeseulbyeon.com/">personal site</a> for more information about her various projects.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container">
             <footer>
                 <div class="row">
@@ -60,24 +91,14 @@
             </footer>
         </div>
 
-        <script src="./demos/assets/jquery.min.js"></script>
-        <script src="./demos/assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+
+        <script src="./../demos/assets/jquery.min.js"></script>
+        <script src="./../demos/assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="./../socialmix/js/socialmix.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                var options = {
-                    basePath : "./../socialmix/",
-                    momentFormat : " MMMM YYYY",
-                    hideGoToFilter: true,
-                    hideSourceFilter: true,
-                    hideTagsFilters: false,
-                    sortCards: 'asc',
-                    feeds:[
-                        {type : "custom" , id : "./demos/custom_data/china-india-data.json"},
-                    ]
-                };
-                $(".timelinebox").socialmix(options);
-            });
-        </script>
+
     </body>
 </html>
