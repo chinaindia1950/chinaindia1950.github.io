@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>China-India Relations in the 1950s</title>
+        <link href="./demos/assets/bootstrap/css/bootstrap-skin.min.css" rel="stylesheet">
+        <link href="./demos/assets/demo.css" rel="stylesheet">
+        <link rel="stylesheet"  type="text/css" href="./../socialmix/css/socialmix.min.css" />
+        <link rel="stylesheet" type="text/css" href="./../socialmix/css/skins/skin_1.min.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="https://chinaindia1950.github.io/"> <strong>1950s China India Chronology</strong>  </a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-link" href="https://chinaindia1950.github.io/sources/"><strong>Methodology</strong></a></li>
+                        <li><a class="page-link" href="https://chinaindia1950.github.io/about/"><strong>About</strong></a></li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron">
+                    <h2>1950s China-India Chronology</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 timelinebox">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <footer>
+                <div class="row">
+                    <u1 class="col-md-4"><a class = "page-link" href = "http://www.fas.harvard.edu/~histecon/"> Center For History and Economics | Harvard University </a></u1>
+                    <div class="col-md-4"> </div> 
+                    <div class="col-md-4"> JQuery Timeline Package Copyright (c) Andrea Di Toro</div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="./demos/assets/jquery.min.js"></script>
+        <script src="./demos/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./../socialmix/js/socialmix.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var options = {
+                    basePath : "./../socialmix/",
+                    momentFormat : " MMMM YYYY",
+                    hideGoToFilter: true,
+                    hideSourceFilter: true,
+                    hideTagsFilters: false,
+                    sortCards: 'asc',
+                    feeds:[
+                        {type : "custom" , id : "./demos/custom_data/china-india-data.json"},
+                    ]
+                };
+                $(".timelinebox").socialmix(options);
+            });
+        </script>
+    </body>
+</html>
