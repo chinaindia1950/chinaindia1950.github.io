@@ -88,8 +88,8 @@ footer{
 .jumbotron{
     margin-top: 30px;
     background-image: url(../assets/img/specialfrontierforce-chou-en-lai.jpg);
-    height: 310px;
-    background-size: cover; 
+    height: 250px;
+    width: 800px;
 }
 .jumbotron h1{
     font-size: 50px;
