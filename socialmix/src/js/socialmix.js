@@ -1294,7 +1294,7 @@ http://kodiga.com/jquery-socialmix-timeline/
         containerTemplate: "html/timeline_container.html",
         translate: { ///////////////NEW
             filterBy: "Filter By",
-            filterByTag: "Filter by tag",
+            filterByTag: "Filter by category",
             allTags: "All Tags",
             goToDate: "Go to date",
             filterByDate: "Date",
