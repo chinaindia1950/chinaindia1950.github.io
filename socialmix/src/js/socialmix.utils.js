@@ -157,7 +157,7 @@ $.fn.socialmix.utils = {
             var individuals = [];
             if(feed.individuals !== undefined){
                 individuals = self.options.templateManager
-                    .populateIndividualList( feed.individuals );
+                    .populateIndividualList( feed.tags_2 ); // Line to change for individuals vs secondary tags
             }
                 // console.log('individuals in util', individuals);
             if(feed.hasOwnProperty("imgs")){
