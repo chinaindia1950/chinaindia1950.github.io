@@ -143,6 +143,7 @@ $.fn.socialmix.utils = {
     },
 
     mapCustomData: function( data ){
+        // console.log('custom data', data);
         var self = this;
         return $.map( data, function( feed ) {
             var systemDate = self.getSystemDate(feed.date);
@@ -152,6 +153,13 @@ $.fn.socialmix.utils = {
                 tags = self.options.templateManager
                     .populateTagList( feed.tags );
             }
+                // console.log('tags in util', tags);
+            var individuals = [];
+            if(feed.individuals !== undefined){
+                individuals = self.options.templateManager
+                    .populateIndividualList( feed.individuals );
+            }
+                // console.log('individuals in util', individuals);
             if(feed.hasOwnProperty("imgs")){
 
                 for (var i = feed.imgs.length - 1; i >= 0; i--) {
@@ -189,10 +197,10 @@ $.fn.socialmix.utils = {
                 text: self.fixTextTag(feed.text),
                 tags: tags,
                 tagDate: tagDate,
-   
+                individuals: individuals,
             };
             $.extend(feed, obj);
-            console.log(feed);
+            // console.log(feed);
             return feed;
         });
     },

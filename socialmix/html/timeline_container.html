@@ -15,19 +15,20 @@
             </div>
         </div>
         
-        <div class="sm-goto sm-dropdown ">
-              <button class="sm-dropdown-btn">{{goToDate}}<i class="fa fa-caret-down"></i></button>
-              <div class="sm-dropdown-content">
-               
-              </div>
-        </div>
-        
         <div class="sm-filter-date sm-dropdown ">
             <button class="sm-dropdown-btn">{{filterByDate}} : <b><span class="sm-dropdown-selected">{{allDates}}</span></b>  <i class="fa fa-caret-down"></i></button>
             <div class="sm-dropdown-content">
             <a value="all">{{allDates}}</a>
                
             </div>
+		</div>
+		
+        <div class="sm-goto sm-dropdown ">
+			  <!-- <button class="sm-dropdown-btn">{{goToDate}}<i class="fa fa-caret-down"></i></button> -->
+			  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search function...">
+              <div class="sm-dropdown-content">
+               
+              </div>
         </div>
 
 	</div>
