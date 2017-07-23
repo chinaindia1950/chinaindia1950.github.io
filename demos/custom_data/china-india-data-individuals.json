@@ -457,7 +457,7 @@
     ,"text":"Sewagram and Nagpur, India"
     ,"tags":["Art and Culture"]
     ,"individuals":["Ding Xilin 丁西林"]
-    ,"tags_2":["Cultural Delegation"]
+    ,"tags_2":["Cultural delegation"]
   },
   {
      "ID":52
@@ -484,7 +484,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Diplomacy", "Trade, Industry and Economics"]
     ,"individuals":[""]
-    ,"tags_2":["Tibet, Panchsheel", "Treaty", "Trade"]
+    ,"tags_2":["Tibet", "Panchsheel", "Treaty", "Trade"]
   },
   {
      "ID":55
@@ -646,7 +646,7 @@
     ,"text":"New Delhi, India"
     ,"tags":["Art and Culture", "Science, Academia and Education"]
     ,"individuals":[""]
-    ,"tags_2":["Cultural Delegation"]
+    ,"tags_2":["Cultural delegation"]
   },
   {
      "ID":73
@@ -664,7 +664,7 @@
     ,"text":"Calcutta, India"
     ,"tags":["Art and Culture"]
     ,"individuals":[""]
-    ,"tags_2":["Cultural Delegation"]
+    ,"tags_2":["Cultural delegation"]
   },
   {
      "ID":76
@@ -754,7 +754,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Art and Culture"]
     ,"individuals":["Vijaylakshmi Pandit"]
-    ,"tags_2":["Cultural Delegation"]
+    ,"tags_2":["Cultural delegation"]
   },
   {
      "ID":86
@@ -781,7 +781,7 @@
     ,"text":"New Delhi, India"
     ,"tags":["Art and Culture"]
     ,"individuals":[""]
-    ,"tags_2":["Cultural Delegation"]
+    ,"tags_2":["Cultural delegation"]
   },
   {
      "ID":89
@@ -817,7 +817,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Diplomacy", "Science, Academia and Education"]
     ,"individuals":["Amrit Kaur"]
-    ,"tags_2":["Public Health", "Offical Visit"]
+    ,"tags_2":["Public health", "Official Visit"]
   },
   {
      "ID":93
@@ -826,7 +826,7 @@
     ,"text":"India"
     ,"tags":["Diplomacy"]
     ,"individuals":["Raghavan 赖嘉文"]
-    ,"tags_2":["Indian Embassy "]
+    ,"tags_2":["Indian embassy"]
   },
   {
      "ID":94
@@ -907,7 +907,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Diplomacy"]
     ,"individuals":["R.K. Nehru  拉。库。尼赫鲁"]
-    ,"tags_2":["Indian Embassy", "Ambassador"]
+    ,"tags_2":["Indian embassy", "Ambassador"]
   },
   {
      "ID":103
@@ -1042,7 +1042,7 @@
     ,"text":"Bombay, India"
     ,"tags":["General", "Art and Culture"]
     ,"individuals":[""]
-    ,"tags_2":["ICFA", "Chinese", "Language"]
+    ,"tags_2":["ICFA", "Chinese language"]
   },
   {
      "ID":118
@@ -1366,7 +1366,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Science, Academia and Education", "Diplomacy"]
     ,"individuals":["Madan Mohanlal Atal 爱德华"]
-    ,"tags_2":["Medical Aid", "Commemoration "]
+    ,"tags_2":["Medical Aid", "Commemoration"]
   },
   {
      "ID":154
@@ -1375,7 +1375,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Science, Academia and Education", "Diplomacy"]
     ,"individuals":["Madan Mohanlal Atal 爱德华", "Zhou Enlai 周恩来, R.K. Nehru  拉。库。尼赫鲁"]
-    ,"tags_2":["Medical Aid", "Commemoration "]
+    ,"tags_2":["Medical Aid", "Commemoration"]
   },
   {
      "ID":155
@@ -1384,7 +1384,7 @@
     ,"text":"India"
     ,"tags":["Science, Academia and Education", "Diplomacy"]
     ,"individuals":["Madan Mohanlal Atal 爱德华"]
-    ,"tags_2":["Medical Aid", "Commemoration "]
+    ,"tags_2":["Medical Aid", "Commemoration"]
   },
   {
      "ID":156
@@ -1546,7 +1546,7 @@
     ,"text":"China"
     ,"tags":["Science, Academia and Education"]
     ,"individuals":["Sripati Chandrasekhar 钱得拉素卡尔"]
-    ,"tags_2":["Public health", "Statitics", "Demography", "Birth Control", "Great Leap Forward"]
+    ,"tags_2":["Public health", "Statistics", "Demography", "Birth Control", "Great Leap Forward"]
   },
   {
      "ID":175
@@ -1582,7 +1582,7 @@
     ,"text":"N/A"
     ,"tags":["General", "Diplomacy"]
     ,"individuals":[""]
-    ,"tags_2":["ICFA", "Sovereignty "]
+    ,"tags_2":["ICFA", "Sovereignty"]
   },
   {
      "ID":179
