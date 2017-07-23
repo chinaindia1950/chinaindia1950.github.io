@@ -15,7 +15,7 @@
     ,"title":"Delegation of the Chinese Academy of Sciences led by botanist Chen Huanyong 陈焕庸 attends a conference in New Delhi on \"The Origin and Distribution of Economic Plants of South Asia\" [南亚经济植物起源与分布]. Other members of the delegation: Wu Zhengyi 吴征镒, Hou Xueyu 侯学煜, and Xu Ren 徐仁. "
     ,"text":"New Delhi, India"
     ,"tags":["Science, Academia and Education"]
-    ,"individuals":["Chen Huanyong 陈焕镛", "Wu Zhengyi 吴征镒", "Hou Xueyu 侯学煜", "Xu Ren 徐仁"]
+    ,"individuals":["Chen Huanyong 陈焕庸", "Wu Zhengyi 吴征镒", "Hou Xueyu 侯学煜", "Xu Ren 徐仁"]
     ,"tags_2":["Chinese Academy of Sciences", "Academic", "Science", "Agriculture", "Botany"]
   },
   {
@@ -39,11 +39,11 @@
   {
      "ID":5
     ,"date":"1951-5"
-    ,"title":"ICFA, Bombay set up; Soong Qingling offers congrats"
+    ,"title":"ICFA, Bombay set up; Soong Qingling offers congratulations"
     ,"text":"Bombay, India"
     ,"tags":["General"]
     ,"individuals":["Soong Qingling 宋庆龄"]
-    ,"tags_2":["ICFA"]
+    ,"tags_2":["ICFA", "Soong Qingling 宋庆龄"]
   },
   {
      "ID":6
@@ -70,7 +70,7 @@
     ,"text":"Bombay, India"
     ,"tags":["Diplomacy"]
     ,"individuals":["Madan Mohanlal Atal 爱德华"]
-    ,"tags_2":["ICFA"]
+    ,"tags_2":["ICFA", "Madan Mohanlal Atal 爱德华"]
   },
   {
      "ID":9
@@ -115,7 +115,7 @@
     ,"text":"Delhi, India"
     ,"tags":["Art and Culture", "Science, Academia and Education"]
     ,"individuals":["Ding Xilin 丁西林", "Chen Hansheng 陈翰笙", "Di Chaobai 狄超白"]
-    ,"tags_2":["Science", "Culture"]
+    ,"tags_2":["Science", "Culture", "Ding Xilin 丁西林", "Chen Hansheng 陈翰笙", "Di Chaobai 狄超白"]
   },
   {
      "ID":14
@@ -205,7 +205,7 @@
     ,"text":"China"
     ,"tags":["Art and Culture"]
     ,"individuals":["Vijaylakshmi Pandit"]
-    ,"tags_2":["ICFA", "Cultural delegation"]
+    ,"tags_2":["ICFA", "Cultural delegation", "Vijaylakshmi Pandit"]
   },
   {
      "ID":24
@@ -223,7 +223,7 @@
     ,"text":"Beijing, China"
     ,"tags":["General"]
     ,"individuals":["Ding Xilin 丁西林", "Vijaylakshmi Pandit"]
-    ,"tags_2":["CIFA"]
+    ,"tags_2":["CIFA", "Ding Xilin 丁西林", "Vijaylakshmi Pandit"]
   },
   {
      "ID":26
@@ -259,7 +259,7 @@
     ,"text":"China"
     ,"tags":["Diplomacy"]
     ,"individuals":["K.M. Panikkar"]
-    ,"tags_2":["Ambassador"]
+    ,"tags_2":["Ambassador", "K.M. Panikkar"]
   },
   {
      "ID":30
@@ -349,7 +349,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Art and Culture"]
     ,"individuals":["Jawaharlal Nehru"]
-    ,"tags_2":["Animals"]
+    ,"tags_2":["Animals", "Jawaharlal Nehru"]
   },
   {
      "ID":40
@@ -376,7 +376,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Art and Culture"]
     ,"individuals":["Mao Zedong"]
-    ,"tags_2":["Art", "Music", "Dance"]
+    ,"tags_2":["Art", "Music", "Dance", "Mao Zedong"]
   },
   {
      "ID":43
@@ -412,7 +412,7 @@
     ,"text":"Bombay, India"
     ,"tags":["Art and Culture"]
     ,"individuals":["Pandit Sunderlal"]
-    ,"tags_2":["ICFA"]
+    ,"tags_2":["ICFA", "Pandit Sunderlal"]
   },
   {
      "ID":47
@@ -439,7 +439,7 @@
     ,"text":"Delhi, Calcutta, Hyderabad"
     ,"tags":["General"]
     ,"individuals":["Ding Xilin 丁西林", "Rajendra Prasad", "Radhakrishna"]
-    ,"tags_2":["ICFA", "All India Meeting", "CIFA"]
+    ,"tags_2":["ICFA", "All India Meeting", "CIFA", "Ding Xilin 丁西林"]
   },
   {
      "ID":50
@@ -457,7 +457,7 @@
     ,"text":"Sewagram and Nagpur, India"
     ,"tags":["Art and Culture"]
     ,"individuals":["Ding Xilin 丁西林"]
-    ,"tags_2":["Cultural delegation"]
+    ,"tags_2":["Cultural delegation", "Ding Xilin 丁西林"]
   },
   {
      "ID":52
@@ -511,7 +511,7 @@
     ,"text":"Delhi, India"
     ,"tags":["Diplomacy"]
     ,"individuals":["Zhou Enlai 周恩来"]
-    ,"tags_2":["Official Visit"]
+    ,"tags_2":["Official visit", "Zhou Enlai 周恩来"]
   },
   {
      "ID":58
@@ -529,7 +529,7 @@
     ,"text":"Bombay, India"
     ,"tags":["Art and Culture"]
     ,"individuals":["Zhou Enlai 周恩来"]
-    ,"tags_2":["Exhibition", "ICFA", "Photography"]
+    ,"tags_2":["Exhibition", "ICFA", "Photography", "Zhou Enlai 周恩来"]
   },
   {
      "ID":60
@@ -619,7 +619,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Diplomacy"]
     ,"individuals":["Jawaharlal Nehru"]
-    ,"tags_2":["Official Visit"]
+    ,"tags_2":["Official visit", "Jawaharlal Nehru"]
   },
   {
      "ID":70
@@ -637,7 +637,7 @@
     ,"text":"N/A"
     ,"tags":["Diplomacy"]
     ,"individuals":["Indira Gandhi"]
-    ,"tags_2":["Official Visit"]
+    ,"tags_2":["Official visit"]
   },
   {
      "ID":72
@@ -672,8 +672,8 @@
     ,"title":"Prof. Qian Duansheng 钱端升 leads delegation to Indian Science Congress"
     ,"text":"India"
     ,"tags":["Science, Academia and Education"]
-    ,"individuals":["Qian Duansheng 钱端升 "]
-    ,"tags_2":["Conference", "Indian Science Congress"]
+    ,"individuals":["Qian Duansheng 钱端升"]
+    ,"tags_2":["Conference", "Indian Science Congress", "Qian Duansheng 钱端升"]
   },
   {
      "ID":77
@@ -682,7 +682,7 @@
     ,"text":"Bombay, India"
     ,"tags":["Science, Academia and Education"]
     ,"individuals":["Qian Duansheng 钱端升 "]
-    ,"tags_2":["ICFA", "Association of Scientific Workers of India"]
+    ,"tags_2":["ICFA", "Association of Scientific Workers of India", "Qian Duansheng 钱端升"]
   },
   {
      "ID":78
@@ -691,7 +691,7 @@
     ,"text":"Delhi, India"
     ,"tags":["Art and Culture"]
     ,"individuals":["Zhou Enlai 周恩来"]
-    ,"tags_2":["ICFA", "Exhibition", "Photography"]
+    ,"tags_2":["ICFA", "Exhibition", "Photography", "Zhou Enlai 周恩来"]
   },
   {
      "ID":79
@@ -727,7 +727,7 @@
     ,"text":"?"
     ,"tags":["Diplomacy"]
     ,"individuals":["Zhou Enlai 周恩来", "Krishna Menon", "Mao Zedong 毛泽东", "Zhu De 朱德", "Chen Yi 陈毅"]
-    ,"tags_2":["Official Visit"]
+    ,"tags_2":["Official visit", "Zhou Enlai 周恩来", "Krishna Menon", "Mao Zedong 毛泽东"]
   },
   {
      "ID":83
@@ -817,7 +817,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Diplomacy", "Science, Academia and Education"]
     ,"individuals":["Amrit Kaur"]
-    ,"tags_2":["Public health", "Official Visit"]
+    ,"tags_2":["Public health", "Official visit"]
   },
   {
      "ID":93
@@ -862,7 +862,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Sports"]
     ,"individuals":["He Long 贺龙", "Mao Zedong 毛泽东"]
-    ,"tags_2":["Volleyball", "Central Athletics Institute"]
+    ,"tags_2":["Volleyball", "Central Athletics Institute", "Mao Zedong 毛泽东"]
   },
   {
      "ID":98
@@ -907,7 +907,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Diplomacy"]
     ,"individuals":["R.K. Nehru  拉。库。尼赫鲁"]
-    ,"tags_2":["Indian embassy", "Ambassador"]
+    ,"tags_2":["Indian embassy", "Ambassador","R.K. Nehru  拉。库。尼赫鲁"]
   },
   {
      "ID":103
@@ -916,7 +916,7 @@
     ,"text":"India"
     ,"tags":["General", "Diplomacy"]
     ,"individuals":["Soong Qingling 宋庆龄"]
-    ,"tags_2":["ICFA"]
+    ,"tags_2":["ICFA", "Soong Qingling 宋庆龄"]
   },
   {
      "ID":104
@@ -925,7 +925,7 @@
     ,"text":"Beijing, China"
     ,"tags":["General", "Diplomacy"]
     ,"individuals":["R.K. Nehru  拉。库。尼赫鲁"]
-    ,"tags_2":["CIFA"]
+    ,"tags_2":["CIFA", "R.K. Nehru  拉。库。尼赫鲁"]
   },
   {
      "ID":105
@@ -934,7 +934,7 @@
     ,"text":"Delhi, India"
     ,"tags":["General", "Art and Culture"]
     ,"individuals":["Wu Han 吴晗"]
-    ,"tags_2":["CIFA", "Delegation"]
+    ,"tags_2":["CIFA", "Delegation", "Wu Han 吴晗"]
   },
   {
      "ID":106
@@ -979,7 +979,7 @@
     ,"text":"?"
     ,"tags":["General", "Diplomacy"]
     ,"individuals":["Jawaharlal Nehru"]
-    ,"tags_2":["ICFA"]
+    ,"tags_2":["ICFA", "Jawaharlal Nehru"]
   },
   {
      "ID":111
@@ -997,7 +997,7 @@
     ,"text":"Beijing, China"
     ,"tags":["General"]
     ,"individuals":["Chen Hansheng 陈翰笙"]
-    ,"tags_2":["CIFA"]
+    ,"tags_2":["CIFA", "Chen Hansheng 陈翰笙"]
   },
   {
      "ID":113
@@ -1006,7 +1006,7 @@
     ,"text":"N/A"
     ,"tags":["General"]
     ,"individuals":["Wu Han 吴晗"]
-    ,"tags_2":["CIFA"]
+    ,"tags_2":["CIFA", "Wu Han 吴晗"]
   },
   {
      "ID":114
@@ -1078,7 +1078,7 @@
     ,"text":"China"
     ,"tags":["Trade, Industry and Economics", "Science, Academia and Education"]
     ,"individuals":["Pitambar Pant"]
-    ,"tags_2":["Planning", "State Planning Commission", "Delegation"]
+    ,"tags_2":["Planning", "State Planning Commission", "Delegation", "Pitambar Pant"]
   },
   {
      "ID":122
@@ -1132,7 +1132,7 @@
     ,"text":"China"
     ,"tags":["General", "Diplomacy", "Defense"]
     ,"individuals":["Ding Xilin 丁西林"]
-    ,"tags_2":["Delegation", "Parliament", "Reception", "Military"]
+    ,"tags_2":["Delegation", "Parliament", "Reception", "Military", "Ding Xilin 丁西林"]
   },
   {
      "ID":128
@@ -1150,7 +1150,7 @@
     ,"text":"China"
     ,"tags":["Diplomacy"]
     ,"individuals":["Liu Shaoqi 刘少奇"]
-    ,"tags_2":["Delegation", "Parliament", "Reception"]
+    ,"tags_2":["Delegation", "Parliament", "Reception", "Liu Shaoqi 刘少奇"]
   },
   {
      "ID":130
@@ -1159,7 +1159,7 @@
     ,"text":"China"
     ,"tags":["Diplomacy", "Defense"]
     ,"individuals":["Peng Dehuai 彭德怀"]
-    ,"tags_2":["Delegation", "Reception", "Military"]
+    ,"tags_2":["Delegation", "Reception", "Military", "Peng Dehuai 彭德怀"]
   },
   {
      "ID":131
@@ -1168,7 +1168,7 @@
     ,"text":"Calcutta, India"
     ,"tags":["General", "Diplomacy"]
     ,"individuals":["Sun Yat-sen 孙中山"]
-    ,"tags_2":["ICFA", "Commemoration"]
+    ,"tags_2":["ICFA", "Commemoration", "Sun Yat-sen 孙中山"]
   },
   {
      "ID":132
@@ -1177,7 +1177,7 @@
     ,"text":"Delhi, India"
     ,"tags":["Diplomacy"]
     ,"individuals":["Zhou Enlai 周恩来"]
-    ,"tags_2":["Official Visit"]
+    ,"tags_2":["Official visit", "Zhou Enlai 周恩来"]
   },
   {
      "ID":133
@@ -1186,7 +1186,7 @@
     ,"text":"Calcutta, India"
     ,"tags":["General", "Diplomacy"]
     ,"individuals":["Zhou Enlai 周恩来"]
-    ,"tags_2":["ICFA"]
+    ,"tags_2":["ICFA", "Zhou Enlai 周恩来"]
   },
   {
      "ID":134
@@ -1195,7 +1195,7 @@
     ,"text":"Calcutta, India"
     ,"tags":["Science, Academia and Education"]
     ,"individuals":["Zhou Enlai 周恩来", "P.C. Mahalanobis 马哈拉诺必斯"]
-    ,"tags_2":["Statistics", "Science"]
+    ,"tags_2":["Statistics", "Science", "Zhou Enlai 周恩来"]
   },
   {
      "ID":135
@@ -1231,7 +1231,7 @@
     ,"text":"Kalimpong, India"
     ,"tags":["Diplomacy", "Trade, Industry and Economics"]
     ,"individuals":["Dalai Lama"]
-    ,"tags_2":["Buddhism", "Trade"]
+    ,"tags_2":["Buddhism", "Trade", "Dalai Lama"]
   },
   {
      "ID":139
@@ -1240,7 +1240,7 @@
     ,"text":"Bolpur, West Bengal, India"
     ,"tags":["Diplomacy", "Science, Academia and Education"]
     ,"individuals":["Zhou Enlai 周恩来"]
-    ,"tags_2":["Academic", "Education, Viswabharati"]
+    ,"tags_2":["Academic", "Education, Viswabharati", "Zhou Enlai 周恩来"]
   },
   {
      "ID":140
@@ -1294,7 +1294,7 @@
     ,"text":"Beijing, China"
     ,"tags":["General", "Art and Culture"]
     ,"individuals":["Zhou Enlai 周恩来, R.K. Nehru  拉。库。尼赫鲁"]
-    ,"tags_2":["CIFA", "Theater", "Embassy", "Commemoration", "Ambassador"]
+    ,"tags_2":["CIFA", "Theater", "Embassy", "Commemoration", "Ambassador", "Zhou Enlai 周恩来", "R.K. Nehru  拉。库。尼赫鲁"]
   },
   {
      "ID":146
@@ -1330,7 +1330,7 @@
     ,"text":"?"
     ,"tags":["Trade, Industry and Economics", "Art and Culture"]
     ,"individuals":["Chen Hansheng 陈翰笙"]
-    ,"tags_2":["Exhibition", "Trade", "Industry", "Crafts"]
+    ,"tags_2":["Exhibition", "Trade", "Industry", "Crafts", "Chen Hansheng 陈翰笙"]
   },
   {
      "ID":150
@@ -1348,7 +1348,7 @@
     ,"text":"China"
     ,"tags":["Diplomacy"]
     ,"individuals":["S. Radhakrishnan"]
-    ,"tags_2":["Official Visit"]
+    ,"tags_2":["Official visit"]
   },
   {
      "ID":152
@@ -1366,7 +1366,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Science, Academia and Education", "Diplomacy"]
     ,"individuals":["Madan Mohanlal Atal 爱德华"]
-    ,"tags_2":["Medical Aid", "Commemoration"]
+    ,"tags_2":["Medical Aid", "Commemoration", "Madan Mohanlal Atal 爱德华"]
   },
   {
      "ID":154
@@ -1375,7 +1375,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Science, Academia and Education", "Diplomacy"]
     ,"individuals":["Madan Mohanlal Atal 爱德华", "Zhou Enlai 周恩来, R.K. Nehru  拉。库。尼赫鲁"]
-    ,"tags_2":["Medical Aid", "Commemoration"]
+    ,"tags_2":["Medical Aid", "Commemoration", "Madan Mohanlal Atal 爱德华", "Zhou Enlai 周恩来, R.K. Nehru  拉。库。尼赫鲁"]
   },
   {
      "ID":155
@@ -1384,7 +1384,7 @@
     ,"text":"India"
     ,"tags":["Science, Academia and Education", "Diplomacy"]
     ,"individuals":["Madan Mohanlal Atal 爱德华"]
-    ,"tags_2":["Medical Aid", "Commemoration"]
+    ,"tags_2":["Medical Aid", "Commemoration", "Madan Mohanlal Atal 爱德华"]
   },
   {
      "ID":156
@@ -1402,7 +1402,7 @@
     ,"text":"India"
     ,"tags":["Diplomacy"]
     ,"individuals":["R.K. Nehru 拉。库。尼赫鲁"]
-    ,"tags_2":["Ambassador", "Embassy"]
+    ,"tags_2":["Ambassador", "Embassy", "R.K. Nehru 拉。库。尼赫鲁"]
   },
   {
      "ID":158
@@ -1411,7 +1411,7 @@
     ,"text":"N/A"
     ,"tags":["Diplomacy", "General"]
     ,"individuals":["Song Qingling 宋庆龄"]
-    ,"tags_2":["ICFA"]
+    ,"tags_2":["ICFA", "Soong Qingling 宋庆龄"]
   },
   {
      "ID":159
@@ -1428,8 +1428,8 @@
     ,"title":"ICFA All India Meeting begins in Bombay and is inaugurated by Krishna Menon. A special pandal named \"Dr. Kotnis Nagar\" is erected at Cross Maidan, Churchgate. Ding Xilin 丁西林 leads Chinese delegation of attendees. The program of the meeting includes two ballets in shadow--Ram Leela and Lord Buddha-- that are produced by Uday Shankar. A stand at Kotnis Nagar collapses during the meeting, injuring 30."
     ,"text":"Bombay, India"
     ,"tags":["General", "Art and Culture", "Diplomacy"]
-    ,"individuals":["Dwarkanath Kotnis  柯棣华", "Krishna Menon", "Ding Xilin 丁西林", "Uday Shankar 乌黛。香卡尔 "]
-    ,"tags_2":["ICFA", "Dance", "Commemoration"]
+    ,"individuals":["Dwarkanath Kotnis  柯棣华", "Krishna Menon", "Ding Xilin 丁西林", "Uday Shankar 乌黛。香卡尔"]
+    ,"tags_2":["ICFA", "Dance", "Commemoration", "Dwarkanath Kotnis  柯棣华", "Krishna Menon", "Ding Xilin 丁西林", "Uday Shankar 乌黛。香卡尔"]
   },
   {
      "ID":161
@@ -1447,7 +1447,7 @@
     ,"text":"India"
     ,"tags":["Diplomacy"]
     ,"individuals":[""]
-    ,"tags_2":["Official Visit", "Parliament", "Delegation"]
+    ,"tags_2":["Official visit", "Parliament", "Delegation"]
   },
   {
      "ID":163
@@ -1465,7 +1465,7 @@
     ,"text":"Bombay, India"
     ,"tags":["General", "Diplomacy"]
     ,"individuals":["R.K. Nehru 拉。库。尼赫鲁"]
-    ,"tags_2":["Nehru", "Ambassador", "ICFA"]
+    ,"tags_2":["Nehru", "Ambassador", "ICFA", "R.K. Nehru 拉。库。尼赫鲁"]
   },
   {
      "ID":165
@@ -1474,7 +1474,7 @@
     ,"text":"China"
     ,"tags":["General", "Diplomacy"]
     ,"individuals":["Chen Yi 陈毅"]
-    ,"tags_2":["ICFA", "Delegation"]
+    ,"tags_2":["ICFA", "Delegation", "Chen Yi 陈毅"]
   },
   {
      "ID":166
@@ -1483,7 +1483,7 @@
     ,"text":"China"
     ,"tags":["Science, Academia and Education"]
     ,"individuals":["Madan Mohanlal Atal 爱德华"]
-    ,"tags_2":["Medical Aid", "Commemoration"]
+    ,"tags_2":["Medical Aid", "Commemoration", "Madan Mohanlal Atal 爱德华"]
   },
   {
      "ID":167
@@ -1537,7 +1537,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Diplomacy"]
     ,"individuals":[""]
-    ,"tags_2":["Official Visit"]
+    ,"tags_2":["Official visit"]
   },
   {
      "ID":174
