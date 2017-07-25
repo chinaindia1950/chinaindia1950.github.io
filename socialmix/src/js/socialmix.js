@@ -1248,7 +1248,7 @@ http://kodiga.com/jquery-socialmix-timeline/
         sortCards: "desc", // "asc"
         maxCardNumber: false,
         momentLocale: "en",
-        momentFormat: "MMMM  YYYY, HH:mm ",
+        momentFormat: "MMMM YYYY",
         momentSmallFormat: "MMMM YYYY",
 
         dependencies: {
