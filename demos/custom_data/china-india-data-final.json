@@ -52,7 +52,7 @@
     ,"text":"New Delhi, India"
     ,"tags":["Diplomacy", "Trade, Industry and Economics"]
     ,"individuals":["Ken Mao-tschou"]
-    ,"tags_2":["Chinese Embassy", "Aid", "Public health"]
+    ,"tags_2":["Embassy", "Aid", "Public health"]
   },
   {
      "ID":7
@@ -97,7 +97,7 @@
     ,"text":"Bombay, India"
     ,"tags":["Art and Culture"]
     ,"individuals":[""]
-    ,"tags_2":["ICFA", "New China", "Exhibition"]
+    ,"tags_2":["ICFA", "Exhibition"]
   },
   {
      "ID":12
@@ -385,7 +385,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Diplomacy", "Art and Culture"]
     ,"individuals":[""]
-    ,"tags_2":["Reception", "Chinese Embassy", "Delegation"]
+    ,"tags_2":["Reception", "Embassy", "Delegation"]
   },
   {
      "ID":44
@@ -547,7 +547,7 @@
     ,"text":"Delhi, India"
     ,"tags":["Diplomacy", "General"]
     ,"individuals":[""]
-    ,"tags_2":["ICFA", "Chinese Embassy"]
+    ,"tags_2":["ICFA", "Embassy"]
   },
   {
      "ID":62
@@ -610,7 +610,7 @@
     ,"text":"Bombay, India"
     ,"tags":["General"]
     ,"individuals":[""]
-    ,"tags_2":["ICFA", "New China"]
+    ,"tags_2":["ICFA"]
   },
   {
      "ID":69
@@ -727,7 +727,7 @@
     ,"text":"?"
     ,"tags":["Diplomacy"]
     ,"individuals":["Zhou Enlai 周恩来", "Krishna Menon", "Mao Zedong 毛泽东", "Chen Yi 陈毅"]
-    ,"tags_2":["Zhou Enlai 周恩来", "Krishna Menon", "Mao Zedong 毛泽东"]
+    ,"tags_2":["Zhou Enlai 周恩来", "Mao Zedong 毛泽东"]
   },
   {
      "ID":83
@@ -772,7 +772,7 @@
     ,"text":"China"
     ,"tags":["Science, Academia and Education", "Art and Culture"]
     ,"individuals":["Raghu Vira"]
-    ,"tags_2":["Art", "History", "Literature", "Buddhism", "Religion"]
+    ,"tags_2":["Art", "Literature", "Buddhism", "Religion"]
   },
   {
      "ID":88
@@ -835,7 +835,7 @@
     ,"text":"India"
     ,"tags":["Diplomacy"]
     ,"individuals":["Raghavan 赖嘉文"]
-    ,"tags_2":["Indian embassy"]
+    ,"tags_2":["Embassy"]
   },
   {
      "ID":95
@@ -844,7 +844,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Science, Academia and Education"]
     ,"individuals":["C.P. Ramaswamy Aiyer", "Dr. Gopal Tripathi"]
-    ,"tags_2":["University", "Education", "Students", "Teachers"]
+    ,"tags_2":["University", "Education", "Students"]
   },
   {
      "ID":96
@@ -862,7 +862,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Art and Culture"]
     ,"individuals":[""]
-    ,"tags_2":["Film", "Film Week "]
+    ,"tags_2":["Film"]
   },
   {
      "ID":98
@@ -871,7 +871,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Sports"]
     ,"individuals":["He Long 贺龙", "Mao Zedong 毛泽东"]
-    ,"tags_2":["Central Athletics Institute", "Mao Zedong 毛泽东"]
+    ,"tags_2":["Mao Zedong 毛泽东"]
   },
   {
      "ID":99
@@ -880,7 +880,7 @@
     ,"text":"?"
     ,"tags":["Science, Academia and Education"]
     ,"individuals":[""]
-    ,"tags_2":["Language Education", "Students"]
+    ,"tags_2":["Language", "Students"]
   },
   {
      "ID":100
@@ -907,7 +907,7 @@
     ,"text":"Beijing, China"
     ,"tags":["Diplomacy"]
     ,"individuals":["R.K. Nehru  拉。库。尼赫鲁"]
-    ,"tags_2":["Indian embassy", "Ambassador", "R.K. Nehru 拉。库。尼赫鲁"]
+    ,"tags_2":["Embassy", "Ambassador", "R.K. Nehru 拉。库。尼赫鲁"]
   },
   {
      "ID":103
@@ -1042,7 +1042,7 @@
     ,"text":"Bombay, India"
     ,"tags":["General", "Art and Culture"]
     ,"individuals":[""]
-    ,"tags_2":["ICFA", "Chinese language"]
+    ,"tags_2":["ICFA", "Language"]
   },
   {
      "ID":118
@@ -1078,7 +1078,7 @@
     ,"text":"China"
     ,"tags":["Trade, Industry and Economics", "Science, Academia and Education"]
     ,"individuals":["Pitambar Pant"]
-    ,"tags_2":["Planning", "State Planning Commission", "Delegation", "Pitambar Pant"]
+    ,"tags_2":["Planning", "Delegation", "Pitambar Pant"]
   },
   {
      "ID":122
@@ -1213,7 +1213,7 @@
     ,"text":"India"
     ,"tags":["General", "Diplomacy"]
     ,"individuals":["Shi Liang 史良"]
-    ,"tags_2":["Women", "Delegation"]
+    ,"tags_2":["Delegation"]
   },
   {
      "ID":137
@@ -1222,7 +1222,7 @@
     ,"text":"N/A"
     ,"tags":["General", "Trade, Industry and Economics"]
     ,"individuals":[""]
-    ,"tags_2":["ICFA", "Trade", "Information"]
+    ,"tags_2":["ICFA", "Trade"]
   },
   {
      "ID":138
